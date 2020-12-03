@@ -1,11 +1,13 @@
 <template>
 <div class="home">
-  <section class="image-gallery row">
-    <div class="image col-sm-3" v-for="athlete in athletes" :key="athlete.id">
-      <h2>{{athlete.name}}</h2>
-      <img class="img-responsive" :src="athlete.path" />
-      <p class="desc">{{athlete.description}}</p>
-      <p class="desc">Medals won: {{athlete.medals}}</p>
+  <section class="row">
+    <div class="col-sm-3" v-for="athlete in athletes" :key="athlete.id">
+      <div class="image">
+        <h2 class="centered">{{athlete.name}}</h2>
+        <img class="img-responsive" :src="athlete.path" />
+        <p class="desc">{{athlete.description}}</p>
+        <p class="desc">Medals won: {{athlete.medals}}</p>
+      </div>
     </div>
   </section>
 </div>
@@ -46,12 +48,13 @@ export default {
 
 .image {
   color: white;
-  background-color: #000e;
+  padding: 3px;
+  background-color: #222d;
   border-radius: 15px;
-  margin: 5px;
+  backdrop-filter: blur(2px);
 }
 
 .desc{
-  padding: 3px;
+  padding: 5px;
 }
 </style>

@@ -10,14 +10,11 @@
   <div class="content">
     <router-view />
   </div>
-  <div class="row">
-    <li class="col-sm-3"><a href="http://github.com">GitHub Repository</a></li>
-    <div class="col-sm-5"></div>
-    <div class="col-sm-2">
-      <router-link to="/admin">
-        <h2 class="title">Edit Roster</h2>
-      </router-link>
-    </div>
+  <div class="footer fixed-bottom">
+    <h2><a class="col-sm-3" href="https://github.com/Ulif1/creative-4">GitHub Repository</a></h2>
+    <router-link to="/admin">
+      <h2 class="title">Edit Roster</h2>
+    </router-link>
   </div>
 </div>
 </template>

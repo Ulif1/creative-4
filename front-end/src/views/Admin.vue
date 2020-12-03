@@ -105,7 +105,7 @@
 }
 
 .suggestion:hover {
-  background-color: #5BDEFF;
+  background-color: #3333FF;
   color: #fff;
 }
 </style>
