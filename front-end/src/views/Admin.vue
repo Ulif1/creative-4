@@ -59,7 +59,6 @@
 <style scoped>
 .btn{
   margin: 2px;
-
 }
 
 .admin{
